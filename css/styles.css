@@ -5,6 +5,7 @@
   --white-color: #ffffff;
   --news-color: #555252;
   --menu-color: #0f0101;
+  --animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -181,6 +182,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
+  transition: color 250ms var(--animation);
 }
 
 .nav-link:hover,
@@ -265,6 +267,7 @@ img {
   min-height: 40px;
   border: 1px solid var(--white-color);
   cursor: pointer;
+  transition: background-color 250ms var(--animation);
 }
 
 .hero-link:hover,
@@ -453,6 +456,7 @@ img {
   padding-bottom: 14px;
   padding-left: 14px;
   flex-grow: 1;
+  transition: background-color 250ms var(--animation);
 }
 
 .product-name:hover,
@@ -469,11 +473,11 @@ img {
   background-color: #8c8c8c;
   text-transform: uppercase;
   padding: 14px;
+  transition: background-color 250ms var(--animation);
 }
 
 .product-info {
   display: flex;
-  overflow: hidden;
 }
 
 .product-link {
@@ -498,6 +502,7 @@ img {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   opacity: 0;
+  transition: opacity 250ms linear 250ms;
 }
 
 .product-link:hover .action,
@@ -513,6 +518,7 @@ img {
   margin-right: 6px;
   cursor: pointer;
   padding: 0px;
+  transition: background-color 250ms var(--animation);
 }
 
 .like:hover,
@@ -537,6 +543,7 @@ img {
   margin-right: 6px;
   cursor: pointer;
   padding: 0px;
+  transition: background-color 250ms var(--animation);
 }
 
 .shuffle:hover,
@@ -560,6 +567,7 @@ img {
   border: 2px solid var(--white-color);
   cursor: pointer;
   padding: 0px;
+  transition: background-color 250ms var(--animation);
 }
 
 .clock:hover,
@@ -592,6 +600,7 @@ img {
   padding: 0px;
   display: flex;
   align-items: center;
+  transition: background-color 250ms var(--animation);
 }
 
 .add-to-cart:hover,
@@ -764,6 +773,6 @@ img {
   background-color: #4ec6ab;
   position: absolute;
   right: 0;
-  border-radius: 5px;
+  border-radius: 0px 5px 5px 0px;
   cursor: pointer;
 }
