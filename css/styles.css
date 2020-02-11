@@ -415,11 +415,14 @@ img {
   height: 302px;
   content: '';
   background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(312px);
+  transition: transform 250ms liner;
 }
 
 .product-list-item:hover .overlay::before,
 .product-list-item:focus .overlay::before {
   display: block;
+  transform: translateY(0);
 }
 
 .section-title {
