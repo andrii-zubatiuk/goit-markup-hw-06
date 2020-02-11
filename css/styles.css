@@ -415,13 +415,21 @@ img {
   height: 302px;
   content: '';
   background-color: rgba(0, 0, 0, 0.5);
-  transform: translateY(312px);
-  transition: transform 250ms linear;
+  /* transform: translateY(312px);
+  transition: transform 250ms linear; */
 }
 
 .product-list-item:hover .overlay::before,
 .product-list-item:focus .overlay::before {
   display: block;
+  /* transform: translateY(0); */
+}
+
+.product-list-item .all-action {
+  transform: translateY(100%);
+}
+
+.product-list-item:hover .all-action {
   transform: translateY(0);
 }
 
