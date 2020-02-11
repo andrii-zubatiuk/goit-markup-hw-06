@@ -416,7 +416,7 @@ img {
   content: '';
   background-color: rgba(0, 0, 0, 0.5);
   transform: translateY(312px);
-  transition: transform 250ms liner;
+  transition: transform 250ms linear;
 }
 
 .product-list-item:hover .overlay::before,
