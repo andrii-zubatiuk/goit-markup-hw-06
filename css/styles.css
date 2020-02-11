@@ -400,11 +400,11 @@ img {
   background-color: #7fd9c7;
 }
 
-.product-list-item .overlay {
+.product-list-item .cover {
   position: relative;
 }
 
-.product-list-item .overlay::before {
+.product-list-item .overlay {
   display: none;
   position: absolute;
   top: 10px;
@@ -413,23 +413,14 @@ img {
   bottom: 10px;
   width: 235px;
   height: 302px;
-  content: '';
   background-color: rgba(0, 0, 0, 0.5);
-  /* transform: translateY(312px);
-  transition: transform 250ms linear; */
+  transform: translateY(312px);
+  transition: transform 250ms linear;
 }
 
-.product-list-item:hover .overlay::before,
-.product-list-item:focus .overlay::before {
+.product-list-item:hover .overlay,
+.product-list-item:focus .overlay {
   display: block;
-  /* transform: translateY(0); */
-}
-
-.product-list-item .all-action {
-  transform: translateY(100%);
-}
-
-.product-list-item:hover .all-action {
   transform: translateY(0);
 }
 
