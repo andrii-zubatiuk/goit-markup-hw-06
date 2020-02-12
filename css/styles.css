@@ -534,22 +534,16 @@ img {
   border: 2px solid var(--white-color);
   margin-right: 6px;
   cursor: pointer;
-  padding: 0px;
   transition: background-color 250ms var(--animation);
+  background-image: url(../images/icons/like.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .like:hover,
 .like:focus {
   background-color: var(--accent-color);
   border: none;
-}
-
-.like::before {
-  content: '\e642';
-  font-size: 30px;
-  font-family: 'Pe-icon-7-stroke';
-  color: var(--white-color);
-  line-height: 1.066;
 }
 
 .shuffle {
@@ -559,8 +553,10 @@ img {
   border: 2px solid var(--white-color);
   margin-right: 6px;
   cursor: pointer;
-  padding: 0px;
   transition: background-color 250ms var(--animation);
+  background-image: url(../images/icons/shuffle.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .shuffle:hover,
@@ -569,36 +565,22 @@ img {
   border: none;
 }
 
-.shuffle::before {
-  content: '\e614';
-  font-size: 30px;
-  font-family: 'Pe-icon-7-stroke';
-  color: var(--white-color);
-  line-height: 1.066;
-}
-
 .clock {
   width: 50px;
   height: 50px;
   background-color: transparent;
   border: 2px solid var(--white-color);
   cursor: pointer;
-  padding: 0px;
   transition: background-color 250ms var(--animation);
+  background-image: url(../images/icons/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .clock:hover,
 .clock:focus {
   background-color: var(--accent-color);
   border: none;
-}
-
-.clock::before {
-  content: '\e66b';
-  font-size: 30px;
-  font-family: 'Pe-icon-7-stroke';
-  color: var(--white-color);
-  line-height: 1.066;
 }
 
 .add-to-cart {
@@ -614,7 +596,6 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
   background-color: #323232;
-  padding: 0px;
   display: flex;
   align-items: center;
   transition: background-color 250ms var(--animation);
@@ -627,11 +608,13 @@ img {
 }
 
 .add-to-cart::before {
-  content: '\e66e';
-  font-size: 30px;
-  font-family: 'Pe-icon-7-stroke';
-  color: var(--white-color);
-  line-height: 1.066;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/icons/add-to-cart.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   margin-right: 15px;
   margin-left: 12px;
 }
@@ -693,7 +676,7 @@ img {
   margin-bottom: 20px;
 }
 
-.button {
+.news-link {
   display: inline-block;
   text-decoration: none;
   font-size: 16px;
@@ -710,8 +693,8 @@ img {
   transition: transform 150ms linear;
 }
 
-.button:hover,
-.button:focus {
+.news-link:hover,
+.news-link:focus {
   transform: scale(1.05);
 }
 
@@ -777,14 +760,10 @@ img {
 }
 
 .input::before {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  content: '\e62d';
-  font-size: 50px;
-  font-family: 'Pe-icon-7-stroke';
-  color: var(--white-color);
-  line-height: 0.52;
+  content: '';
+  background-image: url(../images/icons/enter.png);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 90px;
   height: 60px;
   background-color: #4ec6ab;
