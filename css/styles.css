@@ -543,7 +543,7 @@ img {
 .like:hover,
 .like:focus {
   background-color: var(--accent-color);
-  border: none;
+  border: 2px solid transparent;
 }
 
 .shuffle {
@@ -562,7 +562,7 @@ img {
 .shuffle:hover,
 .shuffle:focus {
   background-color: var(--accent-color);
-  border: none;
+  border: 2px solid transparent;
 }
 
 .clock {
@@ -580,7 +580,7 @@ img {
 .clock:hover,
 .clock:focus {
   background-color: var(--accent-color);
-  border: none;
+  border: 2px solid transparent;
 }
 
 .add-to-cart {
@@ -604,7 +604,7 @@ img {
 .add-to-cart:hover,
 .add-to-cart:focus {
   background-color: var(--accent-color);
-  border: none;
+  border: 2px solid transparent;
 }
 
 .add-to-cart::before {
